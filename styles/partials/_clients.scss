@@ -1,0 +1,46 @@
+.client-gallery{
+    display: flex;
+    justify-content: center;
+    width:40%;
+    margin-top: 20px;
+    &__block{
+        padding:20px;
+        display: block;
+    }
+}
+
+
+.clients blockquote{
+    width:50%;
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    font-size: 1.8rem;
+    line-height: 2;
+    color: $secondaryColor;
+}
+
+// QUOTE AUTHOR SLIDER  
+.client-detail{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px 0 100px 0;
+    h5{
+        margin:10px;
+    }
+    &__image{
+        margin:0 auto;
+        display: block;
+    }
+    &__slider{
+        margin: 10px;
+        color: $secondaryColor;    
+    }
+    &__indicator{
+        padding:5px;
+        &--selected{
+        color: $highlightColor;
+        }        
+    }
+}    

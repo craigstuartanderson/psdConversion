@@ -1,0 +1,173 @@
+.logo--bottom{
+    img{
+        opacity: 0.3;
+    }
+}
+.main-footer{
+    background:#202020;
+    display: flex;
+    justify-content: space-between;
+        h5{
+            color: white;;
+            font-weight: 400;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            padding-bottom: 50px;
+            position: relative;
+            }
+        &__summary{
+            width: 35%;
+            padding: 50px 5% 50px 0;
+            h5{
+                color: $highlightColor;
+                padding-bottom: 30px;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        &__content{
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        }
+        &__column{
+            padding: 50px 0;
+            &--links{
+                width: 20%;
+                padding-right: 5%;
+                position: relative;
+                &::after{
+                    content: "";
+                    height: 3px;
+                    width: 30px;
+                    background: $highlightColor;
+                    position: absolute;
+                    top: 75px;
+                    left: 0;
+                }
+                &::before{
+                    content:"";
+                    height: 300px;
+                    width: 1px;
+                    background: darken($secondaryColor, 25);
+                    position: absolute;
+                    left:-20px;
+                }
+            }
+            &--twitter{
+                width: 40%;
+                padding-right: 5%;
+                position: relative;
+                &::after{
+                    content: "";
+                    height: 3px;
+                    width: 30px;
+                    background: $highlightColor;
+                    position: absolute;
+                    top: 75px;
+                    left: 0;
+                }
+                &::before{
+                    content:"";
+                    height: 300px;
+                    width: 1px;
+                    background: darken($secondaryColor, 25);
+                    position: absolute;
+                    left:-20px;
+                }
+            }
+            &--instagram{
+                width: 40%;
+                position: relative;
+                &::after{
+                    content: "";
+                    height: 3px;
+                    width: 30px;
+                    background: $highlightColor;
+                    position: absolute;
+                    top: 75px;
+                    left: 0;
+                }
+                &::before{
+                    content:"";
+                    height: 300px;
+                    width: 1px;
+                    background: darken($secondaryColor, 25);
+                    position: absolute;
+                    left:-20px;
+                }
+            }
+
+        }
+}
+.links-list{
+    a{
+        font-size: 1rem;
+        color: $secondaryColor;
+        text-transform: uppercase;
+        line-height: 4;
+        &:hover{
+            color: $highlightColor;
+        }
+    }
+}
+.tweet{
+    p{
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+    i{
+        color: darken($secondaryColor,10);
+    }
+    span{
+        color: darken($secondaryColor,10);
+        margin-left: 5px;
+    }
+
+}
+.instagram{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__post{
+        background: $secondaryColor;
+        width: 30%;
+        padding:12.5% 15%;
+        text-align: center;
+        margin-bottom: 5%;
+        i{
+            opacity: 0;
+        }
+        &:hover{
+            background: $highlightColor;
+            i{
+                opacity: 1;
+            }
+        }
+    }
+}
+.sub-footer{
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    &__credits{
+        display: flex;
+        color: darken($secondaryColor, 20);
+    }
+    &__social{
+        color: $secondaryColor;
+        i{
+            margin:0 10px;
+        }
+    }
+
+}
+.test{
+    width:100px;
+    height: 100px;
+    background: $highlightColor;
+    clip-path: polygon(10% 44%, 0 50%, 10% 56%);
+}

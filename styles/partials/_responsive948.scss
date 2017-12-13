@@ -1,0 +1,88 @@
+
+@media (max-width: 948px) {
+    .wrapper{
+        max-width: 768px;
+    }
+    nav.wrapper{
+        a{
+            padding: 15px 15px;
+        }
+    }
+    .choose-content article::after{
+                bottom: 40px;
+    }
+    header.main-header{
+        .hero{
+            h2{
+                font-size: 6rem;
+            }
+            h1.hero-heading{
+                font-size: 9rem;
+            }
+        }
+        .flick{
+            top:80%;
+        }
+    }
+    // GALLERY RESIZE÷
+    .gallery__item{
+        width:50%;
+    }
+
+    // ICON AND HEADING SIZING FOR ABOUTT
+    .about{
+        h5{
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+        &-icon{
+            margin-right: 10px;
+        }
+    }
+    // ICON SIZING
+    .choose-features__block{
+        font-size: 3rem;
+    }
+
+    // ASIDE RESIZE
+   .quote{
+       .quote__text{
+           font-size: 2rem;
+       }
+   }
+
+    // BLOG TEXT DISAPPEARS
+    .blog__text{
+        display: none;
+    }
+    .blog__link{
+        // text-align: center;
+        padding-top: 20px;
+        color: $secondaryColor;
+    }
+    // PRICE RESIZING
+    .plans__price{
+        .price-number{
+            font-size: 3rem;
+        }
+    }
+    // FOOTER SIZING AND EDITING
+    .links-list{
+        a{
+            line-height: 2.5;
+        }
+    }
+    .tweet:nth-of-type(2){
+        display: none;  
+    }
+    .sub-footer{
+        h5{
+            letter-spacing: 2;
+        }
+        &__social
+            i{
+                margin: 0 5px;
+            }
+    }
+
+}    

@@ -1,0 +1,146 @@
+@media (max-width: 768px) {
+    
+     header.main-header{    
+        .logo{
+            margin-bottom: 20px;
+            width: 15%;
+        }
+        nav.wrapper{
+            flex-direction: column;
+            align-items: center;
+            ul{
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 0;
+            }
+            .top-nav{
+                a{
+                    padding: 15px;
+                    font-size: 1.2rem;   
+                }
+            }
+        }
+    }    
+// ABOUT SECTION
+
+    .about{
+        padding: 0 25px;
+        .vertical-logo{
+            display: none;
+        }
+        .about-content{
+            width: 100%;
+            article{
+                text-align: center;
+            }
+        }
+        .highlights-container{
+            flex-wrap:wrap;
+        }
+        .about-highlight{
+            width:auto;
+            padding: 20px 0;
+
+        }
+
+    }
+
+// CHOOSE SECTION 
+    .choose-content article::after{
+                bottom: 40px;
+                left: calc(50% - 105px);
+    }
+    .choose-content{
+        padding: 0 25px;
+        text-align: center;
+        article{
+            padding: 0;
+        }
+        .image-container{
+            display: none;
+        }
+        article{
+            width: 100%;
+        }   
+    }
+    li.choose-features{
+            &__block{
+                width: 50%;
+            }
+    }
+
+
+// TEAM SECTION
+
+    .team-gallery{
+        flex-direction: column;
+        align-items: center;
+        &__block{
+            width: auto;
+            margin: 20px;
+        }
+    }
+    .team-content{
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+
+// ASIDE QUOTE 
+
+    .quote{
+        flex-direction: column;
+        .btn--small{
+            margin-bottom: 20px;
+        }
+    }
+// BLOG SINGLE FILE SIZING
+    .blog{
+        &__text{
+            display: block;
+        }            
+        &__item{
+            width: 100%;
+            &--3{
+                order:2;
+            }
+            &--2{
+                order:3;
+            }
+            &--4{
+                order:4;
+            }
+
+        }
+
+    }
+   
+// PLANS RESIZE
+
+    .plans{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items:space-between;
+        &__block{
+            width: 40%;
+            margin-bottom: 50px;
+        }
+    }
+
+// FOOTER EDIT AND RESIZE
+
+    .main-footer{
+        display: block;
+        padding: 0 20px;
+        &__summary{
+            width: 100%;
+        }
+        &__content{
+            width: 100%;
+        }
+    }
+    .sub-footer{
+        h5{
+            font-size: 1rem;
+        }
+    }
+}    

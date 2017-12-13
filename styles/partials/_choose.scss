@@ -1,0 +1,65 @@
+.choose-content{
+    margin-top:100px;
+    display: flex;
+    justify-content: space-between;
+    article{
+        width: 66.6%;
+        padding-right:50px;
+        position: relative;
+        &::after{
+                content: "";
+                height: 1px;
+                width: 80px;
+                background: lighten($secondaryColor, 20);
+                position: absolute;
+                bottom: 150px;
+                left: 0;
+                z-index: 10;
+            }
+    }
+    .founder{
+        text-transform: uppercase;
+        font-weight: 700;
+        color: black;
+        span{
+            color: $secondaryColor;
+            font-family: "Crimson Text", serif;
+        }
+    }
+    .image-container{
+        width: 33.3%;
+    }
+}
+.choose-features{
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    margin-top:50px;
+    p{
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+    &__block{
+        width: 33.3%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 4rem;
+        padding: 25px 5px;
+        position: relative;
+        &::after{
+                content: "";
+                height: 2px;
+                width: 80%;
+                background:lighten($secondaryColor, 30);
+                position: absolute;
+                bottom: -2px;
+                left: 10%;
+        }
+    }
+    &__icon{
+        width: 15%;
+    }
+    &__blurb{
+        width: 85%;
+    }
+}

@@ -1,0 +1,41 @@
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top:100px;
+    .vertical-logo{
+        width: 25%;
+    }
+    .about-content{
+        width: 75%;
+        h2{
+            margin-top:30px;
+        }
+        .btn{
+            margin-top: 25px;
+        }
+    }
+
+}
+
+// HIGHLIGHT CONTAINER
+.highlights-container{
+    display: flex;
+    justify-content: space-between;
+    .about-highlight{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .about-icon{
+            font-size:2.8rem;
+            border:2px solid $secondaryColor;
+            min-width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+}

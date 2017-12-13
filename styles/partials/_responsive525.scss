@@ -1,0 +1,266 @@
+// HEADER STYLES
+
+@media (max-width: 525px){
+    header.main-header{
+        .hero{
+            h2{
+                font-size: 4rem;
+            }
+            h1.hero-heading{
+                font-size: 6rem;
+            }
+        }
+        .logo{
+            margin-bottom: 20px;
+            width: 15%;
+        }
+        nav.wrapper{
+            flex-direction: column;
+            align-items: center;
+            ul{
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 0;
+            }
+            .top-nav{
+                a{
+                    padding: 10px;   
+                }
+            }
+            .nav-icons{
+                display: none;
+            }
+        }
+    }
+    // ABOUT SECTION
+    .about{
+        .about-container{
+            .about-content{
+                .btn{
+                    margin:20px auto;
+                }
+            }
+        }
+        article{
+            text-align: center;
+            h6{
+                font-size: 1.6rem;
+            }
+        }
+        .highlights-container{
+            flex-direction: column;
+            .about-highlight{
+                justify-content: center;
+            }
+        }
+    }
+
+    // GALLERY / WORK section
+ 
+    .gallery__item{
+        width: 100%;
+        border-bottom: 1px solid white;
+        img{
+            width:100%;
+        }
+        .gallery__overlay{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    // CHOOSE SIZING
+    
+    li.choose-features__block{
+        width: 100%;
+        padding: 25px 20px;
+    }
+    
+    // ASIDE STATS
+    
+    .stats{
+        flex-wrap: wrap;
+        padding: 0 0 25px 0;
+        &__block{
+            padding: 50px;
+            width: 50%;
+        }
+    }
+    
+    // TEAM SIZING
+    .team-content{
+        display: block;
+        text-align: center;
+        &__text{
+            width: 100%;
+        }
+        &__btn{
+            margin: 0 auto;
+        }
+    }
+
+// CLIENTS SECION EDIT
+
+    .client-gallery__block:nth-of-type(1){
+        display: none;
+    }
+    .client-gallery__block:nth-of-type(3){
+        display: none;
+    }
+
+    // QUOTES ASIDE
+
+    .quote{
+        .quote__text{
+            font-size: 1.6rem;
+        }
+    }
+
+
+    .prices__heading{
+        h3{
+            font-size: 1.4rem;
+        }
+    }
+
+    // BLOG RESIZING AND EDITS
+
+    .blog{
+        &__item{
+            display: block;
+            position: relative;
+            &--1{
+                .blog__content{
+                    top:0;
+                    bottom:0;
+                }
+            }
+            &--3{
+                .blog__content{
+                    top:0;
+                    bottom:0;
+                }
+            }
+            &--2{
+                .blog__content{
+                   top:0;
+                   bottom:0; 
+                }
+            }
+            &--4{
+                .blog__content{
+                   top:0;
+                   bottom:0; 
+                }
+            }
+        }
+        &__image{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            color: $highlightColor;
+            p{
+                color: white;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            h6{
+                color: white;
+                font-size: 1.4rem;
+            }
+            .blog__link{
+                color: white;
+            }
+
+        }
+    }
+    .blog__item--1::after,
+    .blog__item--2::after,
+    .blog__item--3::after,
+    .blog__item--4::after{
+        display: none;
+    }
+
+
+
+    // FOOTER
+    .main-footer__content{
+        display: block;
+        text-align: center;
+    
+    }
+    .main-footer__summary{
+        text-align: center;
+        img{
+            margin:0 auto;
+        }
+    }
+    .main-footer__column{
+        width: 80%;
+        margin:0 auto;
+        &--links{
+            &::after{
+                left:calc(50% - 25px);
+            }
+            &::before{
+                display: none;
+            }
+        }
+        &--twitter{
+            &::after{
+                left:calc(50% - 25px);
+            }
+            &::before{
+                display: none;
+            }
+        }
+        &--instagram{
+            &::after{
+                left:calc(50% - 20px);
+            }
+            &::before{
+                display: none;
+            }
+        }
+    }
+    .links-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            width: 50%;
+        }
+    }
+    .sub-footer{
+        display: block;
+       text-align: center;
+       &__credits{
+           padding: 10px;
+       }
+       &__social{
+           padding: 10px;
+       }
+    }
+
+
+}   
+
+
+    
+
+
+
+

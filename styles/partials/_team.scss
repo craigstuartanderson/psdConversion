@@ -1,0 +1,37 @@
+.team-gallery{
+    display: flex;
+    justify-content: space-between;
+    margin-top:100px;
+    &__block{
+        width: 30%;
+        position: relative;
+    }
+    &__overlay{
+        padding:10px;
+        color:white;
+        text-shadow: 0px 0px 1px $secondaryColor;
+        border-top: 1px solid white;
+        position: absolute;
+        width: 100%;
+        bottom:0px;
+        h5{
+            letter-spacing: 3px;
+        }
+        h6{
+            margin-top:10px;    
+            color: white;
+        }
+    }
+}
+.team-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:50px;
+    &__text{
+        width: 66.6%;
+        p{
+            padding: 0;
+        }
+    }
+}

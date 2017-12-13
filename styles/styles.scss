@@ -1,0 +1,23 @@
+$secondaryColor: rgb(111, 111, 111);
+$highlightColor:rgb(246, 177, 56);
+$backgroundColor: rgb(47, 47, 47);
+
+@import "partials/global";
+@import "partials/header";
+@import "partials/nav";
+@import "partials/about";
+@import "partials/sub-header";
+@import "partials/gallery";
+@import "partials/choose";
+@import "partials/asides";
+@import "partials/team";
+@import "partials/clients";
+@import "partials/blog";
+@import "partials/prices";
+@import "partials/footer";
+@import "partials/responsive1375";
+@import "partials/responsive1100";
+@import "partials/responsive948";
+@import "partials/responsive768";
+@import "partials/responsive525";
+@import "partials/animations";
